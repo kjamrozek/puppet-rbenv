@@ -9,7 +9,7 @@ class rbenv::deps::suse {
     'gcc',
     'git',
     'automake',
-    'openssl-devel',
+    'libopenssl-devel',
     'readline-devel',
     'zlib-devel',
     'libffi-devel',

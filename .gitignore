@@ -7,3 +7,4 @@ modules/
 pkg/*
 spec/fixtures/manifests/
 spec/fixtures/modules/
+.idea

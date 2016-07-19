@@ -19,6 +19,14 @@ class rbenv::deps {
       include rbenv::deps::redhat
     }
     'Suse': {
+      zypprepo {'monitoring':
+        baseurl     => "http://download.opensuse.org/repositories/server:/monitoring/SLE_12",
+        enabled     => 1,
+        autorefresh => 1,
+        name        => 'monitornig',
+        gpgcheck    => 0,
+        type        => 'rpm-md'
+      }
       include rbenv::deps::suse
     }
     default: {
